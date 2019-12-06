@@ -58,4 +58,10 @@ class LoginController extends Controller {
                 ->header('Content-Type', 'application/json');
         }
     }
+
+    public function getLogout(){
+        // Auth::logout();
+        Session::flush();
+        return redirect()->route('login.index');
+    }
 }

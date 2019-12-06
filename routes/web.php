@@ -27,7 +27,10 @@ Route::middleware(['basicAuth'])->group(function () {
     Route::get('/employees/destroy/{id}','Api\EmployeesController@destroy');
 
     Route::post('/employees/update_status/{id}','Api\EmployeesController@update_status');
+    
+    
 });
+Route::get('/logout','Api\LoginController@getLogout');
 
 
 Route::post('/login/validation','Api\LoginController@validateUser');

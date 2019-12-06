@@ -10,7 +10,14 @@
                 <h2>Employee Profile</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ '/employees' }}"> Back</a>
+                @if($employee['role_id'] == 3)
+                    <a class="btn btn-primary" href="{{ '/employees/' }}{{$employee['id']}}{{'/edit'}}"> Edit</a>
+                    <a class="btn btn-danger" href="{{ '/logout' }}"> logged Out</a>
+                @else 
+                    <a class="btn btn-primary" href="{{ '/employees' }}"> Back</a>
+                    <a class="btn btn-danger" href="{{ '/logout' }}"> logged Out</a>
+                @endif
+                
             </div>
         </div>
     </div>

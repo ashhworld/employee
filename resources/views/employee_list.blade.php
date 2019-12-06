@@ -11,6 +11,7 @@
             </div>
             <div class="pull-right">
                 <a class="btn btn-success" href="{{ route('employees.create') }}"> Add New</a>
+                <a class="btn btn-danger" href="{{ '/logout' }}"> logged Out</a>
             </div>
         </div>
     </div>

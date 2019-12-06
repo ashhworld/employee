@@ -11,6 +11,7 @@
             </div>
             <div class="pull-right">
                 <a class="btn btn-primary" href="{{ '/employees' }}"> Back</a>
+                <a class="btn btn-danger" href="{{ '/logout' }}"> logged Out</a>
             </div>
         </div>
     </div>
